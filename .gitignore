@@ -1,0 +1,8 @@
+*
+!include
+!include/*
+!src
+!src/*
+!.gitignore
+!Makefile
+!README*
