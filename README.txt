@@ -6,10 +6,10 @@ Clone the repository
 
 Initialize the submodules
 
-``
+```
 git submodule init
 git submodule update
-``
+```
 
 This will download the submodules.
 
