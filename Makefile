@@ -20,7 +20,7 @@ GLFW	= -lglfw
 
 LIBS		= libft.a libmlx42.a
 
-NAME		=	base
+NAME		=	so_long
 
 SRCS		=	main.c \
 					input.c \
@@ -58,7 +58,7 @@ $(NAME): $(OBJS) $(LIBS) $(GLFW)
 
 all: $(NAME)
 
-.PHONY: clean fclean re rere debug
+.PHONY: clean fclean libclean re rere debug
 
 obj/%.o: $(SRCDIR)%.c
 	@mkdir -p $(@D)
@@ -71,13 +71,13 @@ libft.a:
 	@printf "$(RED)- $(BLUE)"
 	@make -C libft
 	@printf "$(RESET)"
-	cp ./libft/libft.a ./
-	cp ./libft/include/* ./include
+	@cp ./libft/libft.a ./
+	@cp ./libft/include/* ./include
 
 libmlx42.a:
-	cmake $(MLXDIR) -B $(MLXDIR)/build && make -s -C $(MLXDIR)/build -j4
-	cp ./MLX42/build/libmlx42.a ./
-		cp ./MLX42/include/MLX42/MLX42.h ./include
+	@cmake $(MLXDIR) -B $(MLXDIR)/build && make -s -C $(MLXDIR)/build -j4
+	@cp ./MLX42/build/libmlx42.a ./
+	@cp ./MLX42/include/MLX42/MLX42.h ./include
 
 
 clean:
@@ -87,10 +87,17 @@ clean:
 
 fclean: clean
 	@printf "$(RED)- $(BLUE)"
-	rm -f $(NAME) $(LIBS)
+	rm -f $(NAME)
+	@printf "$(RESET)"
+
+libclean:
+	@printf "$(RED)- $(BLUE)"
+	rm -f $(LIBS)
 	@printf "$(RESET)"
 
 re: fclean all
+
+rere: libclean re
 
 run: $(NAME)
 	./$(NAME)

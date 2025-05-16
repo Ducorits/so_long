@@ -6,11 +6,11 @@
 /*   By: dritsema <dritsema@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/05/14 21:44:54 by dritsema      #+#    #+#                 */
-/*   Updated: 2025/05/16 14:15:20 by dritsema      ########   odam.nl         */
+/*   Updated: 2025/05/16 20:16:27 by dritsema      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <base.h>
+#include <so_long.h>
 
 void add_event_handler(t_game *data, keys_t key, void (*func)(mlx_key_data_t, void *))
 {

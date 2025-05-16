@@ -6,11 +6,11 @@
 /*   By: dritsema <dritsema@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/05/13 15:49:25 by dritsema      #+#    #+#                 */
-/*   Updated: 2025/05/16 18:29:12 by dritsema      ########   odam.nl         */
+/*   Updated: 2025/05/16 20:16:22 by dritsema      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <base.h>
+#include <so_long.h>
 
 // So for the hook prototype mlx works with a void * param.
 // This is a pointer that YOU yes YOU can typecast to it's correct type. (Or assigg in our marvelous example)
