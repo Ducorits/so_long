@@ -21,10 +21,9 @@ git branch -M master
 git push -u origin master
 ```
 
-```bash
 Then:
+
 - Rename the name variable in the makefile to the name of your executable
 - Rename base.h header to whatever you want. (will have to rename all references)
 - Edit .gitignore to
 - Profit!
-```
