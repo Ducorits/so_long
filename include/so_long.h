@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   base.h                                             :+:    :+:            */
+/*   so_long.h                                          :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: dritsema <dritsema@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/05/14 20:50:22 by dritsema      #+#    #+#                 */
-/*   Updated: 2025/05/16 18:20:27 by dritsema      ########   odam.nl         */
+/*   Updated: 2025/05/16 21:02:17 by dritsema      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,9 @@ typedef struct s_game
 	mlx_t *mlx; // Pointer to the mlx instance
 	event_func *event_handlers;
 	mlx_image_t *image;
+	mlx_image_t *background;
 	t_input_state input_state;
+	mlx_texture_t *texture;
 
 } t_game;
 

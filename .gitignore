@@ -1,8 +1,15 @@
 *
+
 !include
 !include/*
+
 !src
 !src/*
+
+!assets
+!assets/*
+
 !.gitignore
+
 !Makefile
 !README*
