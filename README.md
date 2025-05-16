@@ -25,5 +25,5 @@ Then:
 
 - Rename the name variable in the makefile to the name of your executable
 - Rename base.h header to whatever you want. (will have to rename all references)
-- Edit .gitignore to
+- Edit .gitignore too
 - Profit!
